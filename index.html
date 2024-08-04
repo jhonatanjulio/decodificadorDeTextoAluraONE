@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge AluraONE: Decodificador de Texto</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="./script.js"></script>
 </head>
 <body>
-    <header>
-        <a href="#"><img src="./img/logo-alura.png" alt="Logo Alura - Uma letra &quotA&quot de cor azul."></a>
-    </header> <!-- header -->
     <main>
-        <section>
-            <textarea name="digitar-texto" id=""></textarea>
+        <section id="logo-container">
+            <a href="#"><img src="./img/logo-alura.png" alt="Logo Alura - Uma letra &quotA&quot de cor azul."></a>
+        </section> <!-- logo-container -->
+
+        <section id="main-container">
+            <textarea id="digitar-texto" placeholder="Digite seu texto"></textarea>
             <div class="botoes-criptografar">
-                <span><img src="./img/vetor-atencao.svg" alt="Pequeno ícone com um ponto de exclamação, ilustrando algo a se atentar."><p>Apenas letras minúsculas e sem acento.</p></span>
-                <div class="btn-criptografar" onclick="">Criptografar</div>
-                <div class="btn-descriptografar" onclick="">Descriptografar</div>
+                <span id="atencao"><img src="./img/vetor-atencao.svg" alt="Pequeno ícone com um ponto de exclamação, ilustrando algo a se atentar."><p>Apenas letras minúsculas e sem acento.</p></span>
+                <span id="botoes">
+                    <a class="btn-criptografar" onclick="">Criptografar</a>
+                    <a class="btn-descriptografar" onclick="">Descriptografar</a>
+                </span>
             </div> <!-- div botões criptografar -->
-        </section> <!-- section conteúdo principal/entrada de texto-->
-        <aside>
+        </section> <!-- main-container -->
+
+        <aside id="saida-container">
             <div class="sem-texto">
-                <img src="./img/img-sem-texto.png" alt="Desenho de uma pessoa usando uma lupa, indicando que nenhum texto foi criptografado ou descriptografado ainda.">
+                <img src="./img/img-sem-texto.svg" alt="Desenho de uma pessoa usando uma lupa, indicando que nenhum texto foi criptografado ou descriptografado ainda.">
                 <div class="sem-texto-info">
                     <h2>Nenhuma mensagem encontrada</h2>
                     <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
-            </div>
-            <textarea name="saidaTexto" id=""></textarea>
-            <div class="btn-copiar" onclick="">Copiar</div>
-        </aside> <!-- aside saída de texto -->
+            </div> <!-- sem-texto -->
+
+            <div class="com-texto">
+                <textarea name="saidaTexto" id=""></textarea>
+                <div class="btn-copiar" onclick="">Copiar</div>
+            </div> <!-- com-texto -->
+
+        </aside> <!-- saida-container -->
     </main> <!-- main -->
 </body>
 </html>
