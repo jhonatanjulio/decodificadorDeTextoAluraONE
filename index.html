@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge AluraONE: Decodificador de Texto</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./script.js"></script>
 </head>
 <body>
     <main>
@@ -18,8 +17,8 @@
             <div class="botoes-criptografar">
                 <span id="atencao"><img src="./img/vetor-atencao.svg" alt="Pequeno ícone com um ponto de exclamação, ilustrando algo a se atentar."><p>Apenas letras minúsculas e sem acento.</p></span>
                 <span id="botoes">
-                    <div class="btn-criptografar" onclick="">Criptografar</div>
-                    <div class="btn-descriptografar" onclick="">Descriptografar</div>
+                    <div class="btn-criptografar" onclick="acaoClique(event)">Criptografar</div>
+                    <div class="btn-descriptografar" onclick="acaoClique(event)">Descriptografar</div>
                 </span>
             </div> <!-- div botões criptografar -->
         </section> <!-- main-container -->
@@ -35,10 +34,12 @@
 
             <div class="com-texto">
                 <textarea id="saidaTexto" readonly></textarea>
-                <div class="btn-copiar" onclick="">Copiar</div>
+                <div class="btn-copiar" onclick="acaoClique(event)">Copiar</div>
             </div> <!-- com-texto -->
 
         </aside> <!-- saida-container -->
     </main> <!-- main -->
+
+    <script src="./script.js"></script>
 </body>
 </html>

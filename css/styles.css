@@ -1,7 +1,6 @@
 /* fonte padrao font-family: "Inter", sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -189,6 +188,10 @@ main {
         height: 100%;
     }
 
+    .btn-copiar {
+        width: 100%;
+    }
+
     .sem-texto-info {
         padding: 0;
     }
@@ -213,58 +216,36 @@ main {
         padding: 80px 0;
     }
 
-    .btn-criptografar, .btn-descriptografar, .btn-copiar {
+    .btn-criptografar, .btn-descriptografar {
         width: 332px;
         height: 67px;
     }
     
+    #saidaTexto {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 768px){
+/* responsividade mobile */
+@media screen and (max-width: 375px) {
     main {
-        flex-direction: column;
-        height: auto;
-    }
-
-    /* escondendo a img */
-    .sem-texto > img {
-        display: none;
-    }
-
-    /* personalização do container de saída de texto */
-    #saida-container {
-        width: auto;
-        height: 100%;
-    }
-
-    .sem-texto-info {
-        padding: 0;
+        padding: 0 16px 40px 16px;
     }
 
     #logo-container {
-        display: flex;
-        justify-content: start;
-        padding: 44px 0;
-        width: auto;
+        padding: 44px 0 0 0;
     }
 
-    /* personalização do container de entrada de texto */
+    #botoes {
+        flex-direction: column;
+        gap: 25px;
+    }
 
     #digitar-texto {
-        width: auto;
-        height: 450px;
-        margin-top: 0;
+        height: 280px;
     }
 
-    #main-container {
-        width: auto;
-        padding: 80px 0;
+    .btn-criptografar, .btn-descriptografar {
+        width: 100%;
     }
-
-    .btn-criptografar, .btn-descriptografar, .btn-copiar {
-        width: 332px;
-        height: 67px;
-    }
-    
 }
-
